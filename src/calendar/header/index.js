@@ -16,6 +16,9 @@ import intl from "intl"
 import "intl/locale-data/jsonp/en"
 import "intl/locale-data/jsonp/ar"
 
+//polyfill all locale data
+Intl.DateTimeFormat = intl.DateTimeFormat
+
 class CalendarHeader extends Component {
   static displayName = "IGNORE"
 

@@ -20,6 +20,9 @@ import intl from "intl"
 import "intl/locale-data/jsonp/en"
 import "intl/locale-data/jsonp/ar"
 
+//polyfill all locale data
+Intl.NumberFormat = intl.NumberFormat
+
 //Fallback when RN version is < 0.44
 const viewPropTypes = ViewPropTypes || View.propTypes
 const EmptyArray = []
